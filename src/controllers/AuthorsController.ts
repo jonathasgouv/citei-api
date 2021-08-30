@@ -21,7 +21,7 @@ export default {
         try {
             const offset = parseInt(req.query.offset as string) || 0
             const count = Math.min(parseInt(req.query.count as string), 100) || 20
-            const author = req.query.author as string
+            const author = req.params.author as string
 
             if (!author) {
                 res.status(400).json({ error: 'Author slug is required' })

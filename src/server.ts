@@ -1,5 +1,6 @@
 import express from 'express'
-import '@controllers/UsersController'
+
+require('dotenv').config()
 
 const app = express()
 
