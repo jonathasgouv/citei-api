@@ -9,9 +9,9 @@ const router = express.Router()
 router.get('/', QuotesController.get)
 
 // GET request to list quotes by author.
-router.get('/:id', QuotesController.getById)
+router.get('/random', QuotesController.getRandom)
 
 // GET request to list quotes by author.
-router.get('/random', QuotesController.getRandom)
+router.get('/:id', QuotesController.getById)
 
 export default router
