@@ -22,7 +22,21 @@
       "@controllers/*": ["./src/controllers/*"],
       "@models/*": ["./src/models/*"],
       "@views/*": ["./src/views/*"],
-      "@config/*": ["./src/config/*"]
+      "@interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@database/*": [
+        "./src/database/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "express": [
+        "node_modules/express/lib/express"
+      ]
     }
   },
   "include": [

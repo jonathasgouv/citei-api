@@ -16,7 +16,11 @@ module.exports = {
         '@config': './src/config',
         '@models': './src/models',
         '@controllers': './src/controllers',
-        '@views': './src/views'
+        '@database': './src/database',
+        '@interfaces': './src/interfaces',
+        '@utils': './src/utils',
+        '@views': './src/views',
+        "express": 'node_modules/express/lib/express'
       }
     }]
   ],
