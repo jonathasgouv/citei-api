@@ -29,6 +29,10 @@ export default {
 
             const response = await Quote.find({ authorslug: author }).skip(offset).limit(count)
 
+            if (!response) {
+                return res.status(400).json({ error: 'Invalid author' })
+            }
+
             return res.status(200).json(response)
         } catch (error) {
             return res.status(500).json({ error: 'Internal server error' })

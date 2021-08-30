@@ -23,9 +23,9 @@ const QuoteSchema = new mongoose.Schema<IQuote>({
         type: 'string',
         required: true
     }
-})
+}, { collection: 'Quotes' })
 
 // Create a Model.
-const Quote = mongoose.model<IQuote>('Quote', QuoteSchema, 'Quotes')
+const Quote = mongoose.model<IQuote>('Quote', QuoteSchema)
 
 export default Quote

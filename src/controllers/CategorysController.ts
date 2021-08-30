@@ -21,13 +21,17 @@ export default {
         try {
             const offset = parseInt(req.query.offset as string) || 0
             const count = Math.min(parseInt(req.query.count as string), 100) || 20
-            const category = req.query.category as string
+            const category = req.params.category as string
 
             if (!category) {
                 res.status(400).json({ error: 'Category slug is required' })
             }
 
             const response = await Quote.find({ categoryslug: category }).skip(offset).limit(count)
+
+            if (!response) {
+                return res.status(400).json({ error: 'Invalid category' })
+            }
 
             return res.status(200).json(response)
         } catch (error) {
