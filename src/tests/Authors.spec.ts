@@ -12,4 +12,9 @@ describe('Test authors routes', () => {
 
         expect(res.body).toHaveLength(20)
     })
+    it('Should get quotes by author using offset and count', async () => {
+        const res = await request(app).get('/api/authors/olavo-de-carvalho?offset=10&count=5')
+
+        expect(res.body).toHaveLength(5)
+    })
 })

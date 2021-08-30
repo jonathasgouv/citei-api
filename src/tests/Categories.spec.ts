@@ -12,4 +12,9 @@ describe('Test categories routes', () => {
 
         expect(res.body).toHaveLength(20)
     })
+    it('Should get quotes by category using offset and count', async () => {
+        const res = await request(app).get('/api/categories/aniversario-marido?offset=10&count=5')
+
+        expect(res.body).toHaveLength(5)
+    })
 })
