@@ -1,7 +1,7 @@
 # Citei
 **Version 1.0.0**
 
-Citei é uma API open source e de uso gratuito de citações. A API retorna citações em ordem, aleatórias, por autor ou por categoria. Se você quer construir sua própria versão da API continue lendo, caso contrário leia a [documentação](/) e aprenda como usá-la.
+Citei é uma API open source e de uso gratuito de citações. A API retorna citações em ordem, aleatórias, por autor ou por categoria. Se você quer construir sua própria versão da API continue lendo, caso contrário leia a [documentação](https://citei.herokuapp.com/docs) e aprenda como usá-la.
 
 <p align="center">
   <img src="assets/citeilogobranco.png">
@@ -32,10 +32,10 @@ $ npm run dev
 
 :grinning:
 
-Para popular a database siga o esquema de quotes disponível na [documentação](/).
+Para popular a database siga o esquema de quotes disponível na [documentação](https://citei.herokuapp.com/docs).
 
 ## Modo de usar
-Confira os endpoints disponíveis na [documentação](/).
+Confira os endpoints disponíveis na [documentação](https://citei.herokuapp.com/docs).
 
 ## Construído com
 * [Javascript](https://www.javascript.com/)
