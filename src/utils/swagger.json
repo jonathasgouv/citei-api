@@ -212,7 +212,7 @@
         "/authors/{author}": {
             "get": {
                 "tags": [
-                    "categories"
+                    "authors"
                 ],
                 "summary": "Lista citações de um autor específico",
                 "operationId": "categories",
