@@ -430,7 +430,7 @@
             "Authors": {
                 "type": "object",
                 "properties": {
-                    "authro": {
+                    "author": {
                         "type": "string"
                     },
                     "authorslug": {
