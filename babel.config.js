@@ -21,7 +21,6 @@ module.exports = {
         '@utils': './src/utils',
         '@views': './src/views',
         '@routes': './src/routes',
-        "express": 'node_modules/express/lib/express'
       }
     }]
   ],

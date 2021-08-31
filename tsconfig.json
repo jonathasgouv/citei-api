@@ -13,6 +13,7 @@
     ],                          
     "esModuleInterop": true,                  
     "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,        
     "emitDecoratorMetadata": true,         
     "skipLibCheck": true,                     
@@ -36,9 +37,6 @@
       ],
       "@config/*": [
         "./src/config/*"
-      ],
-      "express": [
-        "node_modules/express/lib/express"
       ]
     }
   },

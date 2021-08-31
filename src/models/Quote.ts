@@ -23,7 +23,7 @@ const QuoteSchema = new mongoose.Schema<IQuote>({
         type: 'string',
         required: true
     }
-}, { collection: 'Quotes' })
+}, { collection: process.env.COLLECTION })
 
 // Create a Model.
 const Quote = mongoose.model<IQuote>('Quote', QuoteSchema)
